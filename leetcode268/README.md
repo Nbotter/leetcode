@@ -1,5 +1,22 @@
 # missing-number-review
 
+arrayを見てそれぞれあっているかを総当たりさせる
+arrayの中に存在していたら続けさせて、存在していなかったらその時のiの値を返す
+
+```
+class Solution:
+    def missingNumber(self, nums: List[int]) -> int:
+        for i in range(0, len(nums) + 1):
+            if i in nums:
+                continue
+            else:
+                return i
+```
+
+
+
+
+
 ```
 def missingNumber(nums):
     """
