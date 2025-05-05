@@ -2,6 +2,8 @@
 
 arrayを見てそれぞれあっているかを総当たりさせる
 arrayの中に存在していたら続けさせて、存在していなかったらその時のiの値を返す
+時間計算量:O(n**2)
+for文を2重に回しているため
 
 ```
 class Solution:
@@ -13,9 +15,9 @@ class Solution:
                 return i
 ```
 
-
-
-
+chatgptに相談すると以下のような提案がなされた
+時間計算量:O(n)
+sum関数でn個の要素にアクセスするため
 
 ```
 def missingNumber(nums):
